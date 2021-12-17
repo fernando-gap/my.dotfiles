@@ -1,0 +1,13 @@
+set show-mode-in-prompt on
+
+# set insert and normal modes (the colors doesn't work)
+set vi-ins-mode-string \1\e[5 q\e]\a\2
+set vi-cmd-mode-string \1\e[1 q\e]\a\2
+
+# enable history search mode
+"\e[A": history-search-backward
+"\e[B": history-search-forward
+
+# only one tab
+set show-all-if-unmodified on
+set show-all-if-ambiguous on
