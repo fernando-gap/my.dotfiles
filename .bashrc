@@ -8,7 +8,18 @@ set -o vi
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-PS1='[\u@\h \W]\$ '
+
+# colors for PS1
+RESET="$(tput sgr0)"
+GREEN="$(tput setaf 2)"
+BOLD="$(tput bold)"
+MAGENTA="$(tput setaf 5)"
+WHITE="$(tput setaf 7)"
+RED="$(tput setaf 1)"
+ITALIC="$(tput sitm)"
+
+# PS1 this will do not be saved on .dotfiles repo
+PS1='\[$BOLD\]\[$MAGENTA\]\u \[$WHITE\]\[$BOLD\]on\[$RESET\] \[$ITALIC\]\[$RED\]\w \[$RESET\]\[$BOLD\]\[$GREEN\]> \[$RESET\]'
 
 export LESSHISTFILE="${XDG_CONFIG_HOME}/less/history"
 export LESSKEY="${XDG_CONFIG_HOME}/less/keys"
