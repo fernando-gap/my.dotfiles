@@ -59,6 +59,8 @@ up(){
 	cd $d
 }
 
+#asdf
+. /opt/asdf-vm/asdf.sh
 
 
 #colors for man pages
