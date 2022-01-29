@@ -1,3 +1,15 @@
+" Summary:
+" 	- General
+" 	- Text, tab and indent related
+" 	- Vim user interface
+" 	- Files, backups and undo
+" 	- Fonts and colors
+" 	- Status line
+" 	- Shortcuts and plugins config
+" 	- Misc
+
+
+
 """""""""""""""""""""""""""""""""""""""""""""""""""
 " => General <=
 """""""""""""""""""""""""""""""""""""""""""""""""""
@@ -124,16 +136,23 @@ set noswapfile
 
 """""""""""""""""""""""""""""""""""""""""""""""""""
 " => Fonts and colors <=
-"""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""
+if has("gui_running")
+	if has("gui_gtk3")
+		set guifont=Inconsolata-g
+	endif
+endif
+
+set background=dark
 
 " enable syntax
 syntax enable
 
 " Colorscheme
-colorscheme atom-dark-256
+colorscheme aylin
 
 """""""""""""""""""""""""""""""""""""""""""""""""""
-" => Status line<=
+" => Status line <=
 """""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Always show the status line

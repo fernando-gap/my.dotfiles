@@ -4,8 +4,18 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-" vim commentary
-Plugin 'tpope/vim-commentary'
+
+" Vim ack 
+Plugin 'mileszs/ack.vim'
+
+" vim surround
+Plugin 'tpope/vim-surround'
+
+" Auto pairs
+Plugin 'jiangmiao/auto-pairs'
+
+" Nerd commenter
+Plugin 'preservim/nerdcommenter'
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
@@ -13,14 +23,20 @@ Plugin 'VundleVim/Vundle.vim'
 " NERDTree to manage files
 Plugin 'preservim/nerdtree'
 
+" better syntax highlight
+Plugin 'sheerun/vim-polyglot'
+
 " Lightline for statusline
 Plugin 'itchyny/lightline.vim'
 
 " Vim atom dark theme
 Plugin 'gosukiwi/vim-atom-dark'
 
-" better syntau highlight
-Plugin 'sheerun/vim-polyglot'
+" aylin colorscheme
+Plugin 'AhmedAbdulrahman/vim-aylin'
+
+" gruvbox8 theme
+Plugin 'lifepillar/vim-gruvbox8'
 
 call vundle#end()
 
