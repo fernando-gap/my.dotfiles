@@ -59,6 +59,9 @@ set si
 " Wrap lines
 set wrap
 
+" Uses tab as spaces
+set expandtab
+
 """""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface <=
 """""""""""""""""""""""""""""""""""""""""""""""""""
@@ -137,19 +140,12 @@ set noswapfile
 """""""""""""""""""""""""""""""""""""""""""""""""""
 " => Fonts and colors <=
 """"""""""""""""""""""""""""""""""""""""""""""""""""
-if has("gui_running")
-	if has("gui_gtk3")
-		set guifont=Inconsolata-g
-	endif
-endif
-
-set background=dark
+" Colorscheme
+colorscheme atom-dark-256
 
 " enable syntax
 syntax enable
 
-" Colorscheme
-colorscheme aylin
 
 """""""""""""""""""""""""""""""""""""""""""""""""""
 " => Status line <=
@@ -192,3 +188,6 @@ let &t_EI .= "\<esc>Ptmux;\<esc>\<esc>]\x7\<esc>\\"
 
 " Solid terminal when vim opens
 hi Normal ctermbg=black
+
+set ttimeout
+set ttimeoutlen=100
