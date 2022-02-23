@@ -11,3 +11,6 @@ set vi-cmd-mode-string \1\e[1 q\e]\a\2
 # only one tab
 set show-all-if-unmodified on
 set show-all-if-ambiguous on
+
+# ignore case when tabbing
+set completion-ignore-case on
